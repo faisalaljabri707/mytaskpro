@@ -98,40 +98,6 @@
                 app:srcCompat="@drawable/btn_login"
                 android:contentDescription="@string/action_sign_in"/>
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button3"
-                android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:text="@string/signup_google"
-                android:layout_marginStart="32dp"
-                android:layout_marginEnd="32dp"
-                android:layout_marginTop="16dp"
-                android:background="@drawable/button_background2"
-                android:drawableStart="@drawable/google"
-                android:drawablePadding="16dp"
-                android:padding="16dp"
-                style="@android:style/Widget.Button"
-                android:textColor="@color/purple"
-                android:textSize="16sp"
-                android:textStyle="bold"/>
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button4"
-                android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:text="@string/signup_facebook"
-                android:layout_marginStart="32dp"
-                android:layout_marginEnd="32dp"
-                android:layout_marginTop="16dp"
-                android:background="@drawable/button_background2"
-                android:drawableStart="@drawable/facebook"
-                android:drawablePadding="16dp"
-                android:padding="16dp"
-                style="@android:style/Widget.Button"
-                android:textColor="@color/purple"
-                android:textSize="16sp"
-                android:textStyle="bold"/>
-
             <TextView
                 android:id="@+id/textView5"
                 android:layout_width="match_parent"
