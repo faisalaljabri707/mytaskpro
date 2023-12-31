@@ -116,24 +116,17 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
         if (itemId == R.id.nav_home) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
         } else if (itemId == R.id.nav_settings) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new SettingsFragment()).commit();
-        } else if (itemId == R.id.nav_share) {
+
             // Show sharing options
             Intent shareIntent = new Intent(Intent.ACTION_SEND);
             shareIntent.setType("text/plain");
             shareIntent.putExtra(Intent.EXTRA_SUBJECT, "TaskPro App");
             shareIntent.putExtra(Intent.EXTRA_TEXT, "Check out TaskPro App: https://play.google.com/store/apps?hl=en&gl=US");
             startActivity(Intent.createChooser(shareIntent, "Share App"));
-        } else if (itemId == R.id.nav_help) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HelpFragment()).commit();
-        } else if (itemId == R.id.nav_account) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new AccountFragment()).commit();
-        } else if (itemId == R.id.nav_about) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new AboutFragment()).commit();
-        } else if (itemId == R.id.nav_contact) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new ContactFragment()).commit();
-        } else if (itemId == R.id.nav_privacy) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new PrivacyFragment()).commit();
+
+
+
+
         } else if (itemId == R.id.nav_logout) {
             // Handle the logout activity
             // Perform logout
